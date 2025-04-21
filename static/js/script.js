@@ -16,6 +16,8 @@ function clearForm(form) {
 
 function outputResults(phoneNumber, validFlag) {
     let validState; // init empty valid state string for output message
+    
+    // assign validState to match the flag value
     if (validFlag) {
         validState = "Valid"
     } else {
