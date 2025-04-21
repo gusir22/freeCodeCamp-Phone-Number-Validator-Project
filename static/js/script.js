@@ -12,6 +12,8 @@ function validatePhoneNumber(form) {
 
 function clearForm(form) {
     form.userInput.value = "";
+
+    document.getElementById('results-div').innerHTML = ""; // delete #results-div
 }
 
 function outputResults(phoneNumber, validFlag) {
