@@ -5,3 +5,7 @@ function validatePhoneNumber(form) {
         alert("Please provide a phone number");
     }
 }
+
+function clearForm(form) {
+    form.userInput.value = "";
+}
