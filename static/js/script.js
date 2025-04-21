@@ -1,1 +1,7 @@
-console.log("Do you have a phone number to validate?");
+function validatePhoneNumber(form) {
+    let phoneNumber = form.userInput.value;
+
+    if (!phoneNumber) {
+        alert("Please provide a phone number");
+    }
+}
