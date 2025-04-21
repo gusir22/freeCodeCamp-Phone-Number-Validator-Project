@@ -4,7 +4,9 @@ function validatePhoneNumber(form) {
     if (!phoneNumber) {
         alert("Please provide a phone number");
     } else {
-        outputResults(phoneNumber, true); // output validation results to #results-div
+        let pattern = /^1?\s?/;
+        let validationFlag = pattern.test(phoneNumber);
+        outputResults(phoneNumber, validationFlag); // output validation results to #results-div
     }
 }
 
