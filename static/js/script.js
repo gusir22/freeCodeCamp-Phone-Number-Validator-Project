@@ -18,6 +18,10 @@ function clearForm(form) {
 
 function outputResults(phoneNumber, validFlag) {
     let validState; // init empty valid state string for output message
+
+    if (!document.getElementById('results-div')) {
+        document.getElementById('output').innerHTML = '<div id="results-div"></div>';
+    }
     
     // assign validState to match the flag value
     if (validFlag) {
