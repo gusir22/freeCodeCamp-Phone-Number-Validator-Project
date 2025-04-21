@@ -4,7 +4,7 @@ function validatePhoneNumber(form) {
     if (!phoneNumber) {
         alert("Please provide a phone number");
     } else {
-        let pattern = /^1?\s?/;
+        let pattern = /^1?\s?(\(\d{3}\)|\d{3})[\s-]?\d{3}[\s-]?\d{4}$/;
         let validationFlag = pattern.test(phoneNumber);
         outputResults(phoneNumber, validationFlag); // output validation results to #results-div
     }
